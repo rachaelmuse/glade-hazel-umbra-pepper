@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-Djtj-WP1.js";var n=e();function r(){return(0,n.jsx)(t,{to:`/`})}export{r as component};

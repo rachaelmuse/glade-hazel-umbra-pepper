@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-bg: #0b0d11;
+  --color-surface: #12151a;
+  --color-elevated: #1a1e26;
+  --color-fg: #e6e8ee;
+  --color-muted: #9aa1ad;
+  --color-subtle: #6d7380;
+  --color-accent: #c5ccd8;
+  --color-accent-fg: #0b0d11;
+  --color-border: color-mix(in oklab, var(--color-fg) 12%, transparent);
+  --color-ring: #c5ccd8;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-border: 0 0 0 1px rgba(230, 232, 238, 0.1);
+  --shadow-border-hover: 0 0 0 1px rgba(230, 232, 238, 0.18);
+
+  --tracking-display: -0.03em;
+  --tracking-kicker: 0.22em;
+  --tracking-label: 0.16em;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: ease-in-out;
+  --motion-quick: 150ms;
+  --motion-fast: 250ms;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+.hero-wash {
+  background: radial-gradient(
+    ellipse 70% 42% at 50% 0%,
+    color-mix(in oklab, var(--color-elevated) 80%, transparent),
+    transparent 70%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

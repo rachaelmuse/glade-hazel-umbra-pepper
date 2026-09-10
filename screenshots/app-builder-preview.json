@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Homecoming Signal",
+      "hasCanvas": true,
+      "bodyTextLen": 308,
+      "bodyTextHash": "b99673d99feb60b46ef5920eb6a7731cceddde17f16fab3998791fa2b3f82029",
+      "bodyTextPrefix": "SIGNAL CONSOLE Homecoming Signal Homecoming Schumann 321 000 Hz ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Homecoming Signal",
+      "hasCanvas": true,
+      "bodyTextLen": 308,
+      "bodyTextHash": "b99673d99feb60b46ef5920eb6a7731cceddde17f16fab3998791fa2b3f82029",
+      "bodyTextPrefix": "SIGNAL CONSOLE Homecoming Signal Homecoming Schumann 321 000 Hz ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
